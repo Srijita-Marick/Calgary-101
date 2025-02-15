@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>calgaryhacks2025.calgary101/calgaryhacks2025.calgary101.HelloApplication
+                            <mainClass>calgaryhacks2025.calgary101/calgaryhacks2025.calgary101.LoginApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

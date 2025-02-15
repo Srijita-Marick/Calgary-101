@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="calgaryhacks2025.calgary101.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #351E10; -fx-border-color: #997950; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#997950" layoutX="82.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Calgary!" textAlignment="CENTER" wrappingWidth="444.1572265625">
+         <font>
+            <Font name="Stencil" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#997950" layoutX="208.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🏇⭒">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Text>
+      <Text fill="#997950" layoutX="313.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭒">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+      <Text fill="#997950" layoutX="341.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭒">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#997950" layoutX="366.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭒">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="226.0" layoutY="282.0" mnemonicParsing="false" onAction="#onWelcomeButtonClick" text="Start Your Journey">
+         <font>
+            <Font name="Rockwell" size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>
