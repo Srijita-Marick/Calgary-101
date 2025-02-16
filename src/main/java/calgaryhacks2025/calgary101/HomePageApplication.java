@@ -21,4 +21,5 @@ public class HomePageApplication extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
 }
