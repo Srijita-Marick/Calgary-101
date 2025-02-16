@@ -21,7 +21,7 @@
          <children>
             <AnchorPane layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
                <children>
-                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👮 The Sheriff's Roundup" textAlignment="CENTER" wrappingWidth="290.4">
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👮 The Sheriff's Roundup" wrappingWidth="290.4">
                      <font>
                         <Font name="Rockwell Bold" size="18.0" />
                      </font>
@@ -54,7 +54,7 @@
                </children></AnchorPane>
             <AnchorPane layoutX="290.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
                <children>
-                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🏥 The Medic’s Outpost" textAlignment="CENTER" wrappingWidth="290.4">
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🏥 The Medic’s Outpost" wrappingWidth="290.4">
                      <font>
                         <Font name="Rockwell Bold" size="18.0" />
                      </font>
@@ -83,17 +83,17 @@
             </AnchorPane>
             <AnchorPane layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
                <children>
-                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🔥 Fire Outpost" textAlignment="CENTER" wrappingWidth="290.4">
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🔥 Fire Outpost" wrappingWidth="290.4">
                      <font>
                         <Font name="Rockwell Bold" size="18.0" />
                      </font>
                   </Text>
-                  <Text fill="#392a20" layoutX="10.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Emergency Line: Call 911" wrappingWidth="280.39999904632566">
+                  <Text fill="#392a20" layoutX="10.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Emergency Line: Call 911" wrappingWidth="280.39999904632566">
                      <font>
                         <Font name="Rockwell" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="#392a20" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fires can be dangerous. Always keep your home up to date with fire regulations, and contact the Calgary Fire Department if you see a fire" wrappingWidth="280.39999904632566">
+                  <Text fill="#392a20" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Always keep your home up to date with fire regulations, and contact the Calgary Fire Department if you see a fire" wrappingWidth="272.39999904632566">
                      <font>
                         <Font name="Rockwell" size="14.0" />
                      </font>
@@ -102,7 +102,7 @@
             </AnchorPane>
             <AnchorPane layoutX="290.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
                <children>
-                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="📞 The Lone Ranger’s Lifeline" textAlignment="CENTER" wrappingWidth="290.4">
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="📞 The Lone Ranger’s Lifeline" wrappingWidth="290.4">
                      <font>
                         <Font name="Rockwell Bold" size="18.0" />
                      </font>
