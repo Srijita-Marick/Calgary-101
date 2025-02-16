@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #997950; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.HomePageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #997950; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.HomePageController">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="290.0" style="-fx-background-color: #351E10;">
          <effect>
@@ -29,7 +29,7 @@
          </children></AnchorPane>
       <AnchorPane layoutX="300.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="290.0" style="-fx-background-color: #351E10;">
          <children>
-            <Button alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="50.0" layoutY="90.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="🎯">
+            <Button alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="50.0" layoutY="90.0" mnemonicParsing="false" onAction="#handleSideQuestsButton" prefHeight="150.0" prefWidth="150.0" text="🎯">
                <font>
                   <Font size="62.0" />
                </font>

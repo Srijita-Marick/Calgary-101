@@ -30,4 +30,22 @@ public class HomePageController {
 
         stage.show();
     }
+
+
+    @FXML
+    private void handleSideQuestsButton(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("sideQuests.fxml"));
+        Parent root;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
+        }
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
