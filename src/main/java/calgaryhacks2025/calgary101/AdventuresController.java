@@ -12,7 +12,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -94,22 +96,34 @@ public class AdventuresController {
         stage.show();
     }
 
+    private Text createText(String content, int fontSize, String colorHex, double wrappingWidth, TextAlignment alignment, boolean bold) {
+        Text text = new Text(content);
+        if (bold) {
+            text.setFont(Font.font("Rockwell", FontWeight.BOLD, fontSize));
+        }
+        else {
+            text.setFont(Font.font("Rockwell", fontSize));
+        }
+        text.setFill(Color.web(colorHex));
+        text.setWrappingWidth(wrappingWidth);
+        text.setTextAlignment(alignment);
+        return text;
+    }
+
     @FXML
     private void handleCalgaryTower(ActionEvent event) {
-
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 tower");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83D\uDDFC Sky-High Lookout", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("Take a trip to the Calgary Tower for stunning panoramic views of the city and the surrounding mountains. Don’t forget to check out the Glass Floor for an extra thrill!", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, space);
         completeTask(btnCalgaryTower,0);
 
     }
@@ -118,17 +132,16 @@ public class AdventuresController {
     private void handlePeaceBridge(ActionEvent event) {
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 the bridge");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83C\uDF09 Peacekeeper’s Crossing", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("Stroll across the Peace Bridge, a beautiful pedestrian bridge with vibrant red arches that crosses the Bow River. It’s a great spot for photos and enjoying the scenic view of downtown Calgary.", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, space);
         completeTask(btnPeaceBridge,1);
 
     }
@@ -137,17 +150,16 @@ public class AdventuresController {
     private void handleCentralLibrary(ActionEvent event) {
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 Rewards");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83D\uDCDA The Ol’ Central Library", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("Check out the stunning Central Library, a hub for books, events, and community activities. The architecture alone is worth the visit!", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, space);
         completeTask(btnCentralLibrary,2);
     }
 
@@ -155,51 +167,53 @@ public class AdventuresController {
     private void handleCalgaryZoo(ActionEvent event) {
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 Fair Entry");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83D\uDC2F Roundup at the Zoo", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("Visit the Calgary Zoo to see a variety of animals from around the world. It’s a fun, educational adventure for animal lovers and families alike.", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, space);
         completeTask(btnCalgaryZoo,3);
     }
     @FXML
     private void handleChinookMall(ActionEvent event) {
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 Uber");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83D\uDECD Fill Yer Saddlebags", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("Head over to Chinook Mall, one of Calgary’s largest shopping destinations, offering a wide range of stores, restaurants, and even a movie theater to enjoy during your visit.", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, space);
         completeTask(btnChinookMall,4);
     }
     @FXML
     private void handleMuseum(ActionEvent event) {
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 Learn to drive");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83C\uDFDB Relics of the Old West", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("Explore one of Calgary’s many museums:", 12, colorHex, wrappingWidth, alignment, false);
+        Text step1 = createText("• Glenbow Museum: Art and history collide in this expansive museum.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step2 = createText("• The Military Museums: Learn about Canada's military history.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step3 = createText("• TELUS Spark Science Centre: A hands-on science experience for all ages.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step4 = createText("• Studio Bell, Home of the National Music Centre: Celebrate Canada's musical history.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step5 = createText("• The Calgary Police Museum: Dive into Calgary’s history with law enforcement.", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, step1, step2, step3, step4, step5, space);
         completeTask(btnMuseum,5);
     }
 
@@ -207,17 +221,16 @@ public class AdventuresController {
     private void handleStampede(ActionEvent event) {
         vboxAdventures.getChildren().clear();
 
-        Text txtTitle = new Text("\uD83D\uDE82 volunteer");
-        txtTitle.setFont(Font.font("Rockwell",30));
-        txtTitle.setFill(colour.web("#392A20"));
+        double wrappingWidth = 350;
+        String colorHex = "#392A20";
+        TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text txtBody = new Text(("Something\nOther Stuff\nYay"));
-        txtBody.setFont(Font.font("Rockwell",16));
-        txtBody.setFill(colour.web("#392A20"));
-        txtBody.setLineSpacing(10);
+        Text heading = createText("\uD83C\uDFA0 Rodeo & Ruckus", 24, colorHex, wrappingWidth, alignment, true);
+        Text content = createText("The Calgary Stampede is an iconic event featuring rodeos, rides, and tons of entertainment. Make sure to check it out in July for a true taste of Western culture and fun.", 12, colorHex, wrappingWidth, alignment, false);
+        Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
-        vboxAdventures.setSpacing(20);
-        vboxAdventures.getChildren().addAll(txtTitle,txtBody);
+        vboxAdventures.setSpacing(7);
+        vboxAdventures.getChildren().addAll(heading, content, space);
         completeTask(btnStampede,6);
     }
 
