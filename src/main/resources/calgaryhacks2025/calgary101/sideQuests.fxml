@@ -23,30 +23,51 @@
       <Button fx:id="btnTransitPass" layoutX="40.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleTransitPass" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Transit Pass" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
-      <Button fx:id="btnLibraryCard" layoutX="40.0" layoutY="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Library Card" textFill="#b9a89c">
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnLibraryCard" layoutX="40.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleLibraryCard" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Library Card" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="btnRewardsCards" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleRewardsCards" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Rewards Cards" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="btnFairEntry" layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleFairEntry" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Fair Entry" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="btnUber" layoutX="40.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleUber" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Uber" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="btnDriversLicense" layoutX="40.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleDriversLicense" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Driver's License" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="btnVolunteer" layoutX="40.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleVolunteer" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Volunteer" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </AnchorPane>
