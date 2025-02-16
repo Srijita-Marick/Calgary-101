@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #CA9771; -fx-border-width: 10; -fx-background-color: #392A20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.SideQuestsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #CA9771; -fx-border-width: 10; -fx-background-color: #392A20;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.SideQuestsController">
    <children>
       <VBox fx:id="vboxSQ" layoutX="200.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="390.0" snapToPixel="false" style="-fx-background-color: #FDDA70;">
          <padding>
-            <Insets bottom="20.0" left="50.0" right="20.0" top="20.0" />
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding></VBox>
       <Text fill="WHITE" layoutX="32.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;&lt; Return">
          <font>
