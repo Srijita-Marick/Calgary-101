@@ -11,6 +11,5 @@ public class EssentialsApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-    // Testing github connection
     }
 }
