@@ -118,7 +118,7 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 tower", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDDFC Sky-High Lookout", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Take a trip to the Calgary Tower for stunning panoramic views of the city and the surrounding mountains. Don’t forget to check out the Glass Floor for an extra thrill!", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
@@ -136,7 +136,7 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 bridge", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83C\uDF09 Peacekeeper’s Crossing", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Stroll across the Peace Bridge, a beautiful pedestrian bridge with vibrant red arches that crosses the Bow River. It’s a great spot for photos and enjoying the scenic view of downtown Calgary.", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
@@ -154,7 +154,7 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 library", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDCDA The Ol’ Central Library", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Check out the stunning Central Library, a hub for books, events, and community activities. The architecture alone is worth the visit!", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
@@ -171,7 +171,7 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 zoo", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDC2F Roundup at the Zoo", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Visit the Calgary Zoo to see a variety of animals from around the world. It’s a fun, educational adventure for animal lovers and families alike.", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
@@ -187,7 +187,7 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 mall", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDECD Fill Yer Saddlebags", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Head over to Chinook Mall, one of Calgary’s largest shopping destinations, offering a wide range of stores, restaurants, and even a movie theater to enjoy during your visit.", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
@@ -203,13 +203,13 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 museum", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83C\uDFDB Relics of the Old West", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Explore one of Calgary’s many museums:", 12, colorHex, wrappingWidth, alignment, false);
-        Text step1 = createText("- Glenbow Museum: Art and history collide in this expansive museum.", 12, colorHex, wrappingWidth, alignment, false);
-        Text step2 = createText("- The Military Museums: Learn about Canada's military history.", 12, colorHex, wrappingWidth, alignment, false);
-        Text step3 = createText("- TELUS Spark Science Centre: A hands-on science experience for all ages.", 12, colorHex, wrappingWidth, alignment, false);
-        Text step4 = createText("- Studio Bell, Home of the National Music Centre: Celebrate Canada's musical history.", 12, colorHex, wrappingWidth, alignment, false);
-        Text step5 = createText("- The Calgary Police Museum: Dive into Calgary’s history with law enforcement.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step1 = createText("• Glenbow Museum: Art and history collide in this expansive museum.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step2 = createText("• The Military Museums: Learn about Canada's military history.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step3 = createText("• TELUS Spark Science Centre: A hands-on science experience for all ages.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step4 = createText("• Studio Bell, Home of the National Music Centre: Celebrate Canada's musical history.", 12, colorHex, wrappingWidth, alignment, false);
+        Text step5 = createText("• The Calgary Police Museum: Dive into Calgary’s history with law enforcement.", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
         vboxAdventures.setSpacing(7);
@@ -225,7 +225,7 @@ public class AdventuresController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 stampede", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83C\uDFA0 Rodeo & Ruckus", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("The Calgary Stampede is an iconic event featuring rodeos, rides, and tons of entertainment. Make sure to check it out in July for a true taste of Western culture and fun.", 12, colorHex, wrappingWidth, alignment, false);
         Text space = createText(" ", 12, colorHex, wrappingWidth, alignment, false);
 
