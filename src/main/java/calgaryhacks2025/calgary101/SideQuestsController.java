@@ -128,7 +128,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 Transit Pass", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDE82 Ride the Rails, Cowboy!", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Every cowboy knows that sometimes, you gotta ride the city rails instead of your trusty steed. Get yourself a City Transit Pass and save time and money while gettin' around town!", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Download the My Fare App", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("Start by downloading the My Fare app. It’s available for iOS and Android. This app lets you easily load your fare, check passes, and ride with ease.", 12, colorHex, wrappingWidth, alignment, false);
@@ -154,7 +154,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 Library Card", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDCD6 Knowledge Round-Up", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Every cowboy knows that a good library is a goldmine of information. Whether you’re lookin’ for adventure tales, maps to new lands, or a bit of quiet time, a Calgary Public Library Card is your ticket to all that and more!", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Head to the Calgary Public Library Website", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("First, make your way over to the Calgary Public Library website (https://www.calgarylibrary.ca/). There, you’ll find the option to “Get a Library Membership”. Just follow the link and fill out the easy registration form online to get started.", 12, colorHex, wrappingWidth, alignment, false);
@@ -178,7 +178,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 Rewards", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83C\uDF56 Wrangle Your Rewards", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("A good cowboy always knows where to get the best grub, and that means signing up for a Grocery Store Rewards Card! These cards let you save some cash and get great deals on your everyday essentials.", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Find A Local Grocery Store", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("Look around for a local store near you that offers a rewards program. Here’s a list of some options: Save-On-Foods, FreshCo, Calgary Co-op, Real Canadian Superstore and more. Some stores even have discounts for students!", 12, colorHex, wrappingWidth, alignment, false);
@@ -200,7 +200,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 Fair Entry", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDCB0 Lasso Up Discounts", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Sometimes, every cowboy and cowgirl needs a little help to make sure they can take part in all the great things the community has to offer. The Fair Entry Program helps lower-income folks access some of Calgary's finest services at a more affordable rate.", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Learn About the Programs", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("The Fair Entry Program provides access to various services at a discounted price, like recreation and cultural programs. Head over to the Fair Entry website to find out which programs and services are available to you. Check it out here: https://www.calgary.ca/social-services/low-income/fair-entry-subsidy.html", 12, colorHex, wrappingWidth, alignment, false);
@@ -224,7 +224,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 Uber", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83C\uDFC7 Giddy Up & Go!", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("When you're out on the range, you never know when you’ll need a fast getaway or a quick ride into town. That’s where Uber comes in, partner! It’s like your trusty steed, ready to roll whenever you need it most. NOTE: The steps beyond this line are optional. You may skip these steps and still complete this task in its entirety.", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Download the Uber App", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("First, download the Uber app from your phone's app store. Whether you’re on iOS or Android, just find it, hit download, and you’re ready to go.", 12, colorHex, wrappingWidth, alignment, false);
@@ -248,7 +248,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 Learn to drive", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83D\uDC0E Take the Reins", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("Every cowboy needs a trusty steed, but sometimes a vehicle is just as important to get from one ranch to the next. Whether you're rollin' through town or headin' out on a long journey, a driver’s license is your key to freedom!", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Learn the Rules of the Road", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("Before you can drive like a cowboy, you’ll need to learn the rules of the road. Head over to the Alberta Driver’s License website (https://www.alberta.ca/get-drivers-licence) to check out all the information on what you need to know, from road signs to traffic laws. You’ll find details on both the GDL (Graduated Driver's License) and Class 5 licenses.", 12, colorHex, wrappingWidth, alignment, false);
@@ -271,7 +271,7 @@ public class SideQuestsController {
         String colorHex = "#392A20";
         TextAlignment alignment = TextAlignment.JUSTIFY;
 
-        Text heading = createText("\uD83D\uDE82 volunteer", 24, colorHex, wrappingWidth, alignment, true);
+        Text heading = createText("\uD83C\uDFDC Save the Town!", 24, colorHex, wrappingWidth, alignment, true);
         Text content = createText("A true cowboy always looks out for his fellow cowboys and cowgirls. Volunteering is a mighty fine way to give back and make a real difference in your community.", 12, colorHex, wrappingWidth, alignment, false);
         Text step1 = createText("Step 1: Find a Local Cause", 12, colorHex, wrappingWidth, alignment, true);
         Text content1 = createText("There are plenty of ways to volunteer in Calgary—whether it's helping at a food bank, working with local shelters, or supporting community events. Find a cause that speaks to you, and check out what opportunities are available!", 12, colorHex, wrappingWidth, alignment, false);
