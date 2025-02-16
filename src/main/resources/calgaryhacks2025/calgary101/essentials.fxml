@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #392A20; -fx-border-color: #CA9771; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.EssentialsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #392A20; -fx-border-color: #CA9771; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.EssentialsController">
    <children>
       <VBox fx:id="vBoxEssentials" layoutX="200.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="390.0" style="-fx-background-color: #FDDA70;">
          <opaqueInsets>
@@ -24,22 +24,31 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button layoutX="40.0" layoutY="80.0" mnemonicParsing="false" onAction="#handlePhnButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Phone Number" textFill="#b9a89c">
+      <Button fx:id="btnPhoneNumber" layoutX="40.0" layoutY="80.0" mnemonicParsing="false" onAction="#handlePhnButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Phone Number" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button layoutX="40.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleResButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Residence" textFill="#b9a89c">
+      <Button fx:id="btnResidence" layoutX="40.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleResButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Residence" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleHealthCButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Health Card" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleSINButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="SIN Number" textFill="#b9a89c">
+      <Button fx:id="btnSIN" layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleSINButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="SIN Number" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
@@ -48,16 +57,25 @@
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button layoutX="40.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleAlbertaIDButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Alberta ID" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button layoutX="40.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleEmergencyListButton" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Emergency List" textFill="#b9a89c">
          <font>
             <Font name="Candara Bold" size="16.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
    </children>
 </AnchorPane>

@@ -1,25 +1,86 @@
 package calgaryhacks2025.calgary101;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
+import java.util.Scanner;
 
 public class EssentialsController {
 
     @FXML
     private VBox vBoxEssentials;
+    @FXML
+    private Button btnPhoneNumber;
+    @FXML
+    private Button btnResidence;
+    @FXML
+    private Button btnHealthCard;
+    @FXML
+    private Button btnSIN;
+    @FXML
+    private Button btnBanking;
+    @FXML
+    private Button btnAlbertaID;
+    @FXML
+    private Button btnEmergencyList;
+    private Color colour;
+    private String[] logText=new String[4];
+
+
+    @FXML
+    private void initialize() throws FileNotFoundException {
+        Button[] buttons = new Button[7];
+        buttons[0] = btnPhoneNumber;
+        buttons[1] = btnResidence;
+        buttons[2] = btnHealthCard;
+        buttons[3] = btnSIN;
+        buttons[4] = btnBanking;
+        buttons[5] = btnAlbertaID;
+        buttons[6] = btnEmergencyList;
+
+
+        try {
+            File log = new File("src/main/java/calgaryhacks2025/calgary101/log");
+            Scanner myReader = new Scanner(log);
+            int count=0;
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                logText[count] = data;
+                count++;
+                if(data.contains("essentials")){
+                    String bin = data.substring(11);
+                    int i=0;
+                    for (Button button :buttons){
+                        if (bin.charAt(i) == '1'){
+                            button.setStyle("-fx-background-color: green");
+                            button.setText("Completed");
+                        }
+                        i++;
+                    }
+                }
+            }
+            myReader.close();
+        }catch (FileNotFoundException e){
+
+        }
+
+    }
+
 
     @FXML
     private void handleReturnButton(ActionEvent event) {
@@ -73,6 +134,7 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().addAll(heading, content, step1, content1, step2, content2, step3, content3, step4, content4);
+        completeTask(btnPhoneNumber,0);
     }
 
     @FXML
@@ -93,6 +155,7 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().addAll(heading, content, step1, content1, step2, content2, ending);
+        completeTask(btnResidence,1);
     }
 
     @FXML
@@ -118,6 +181,7 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().addAll(heading, content, step1, content1, step2, content2, step3, content3, step4, content4, step5, content5);
+        completeTask(btnHealthCard,2);
     }
 
     @FXML
@@ -130,6 +194,7 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().add(heading);
+        completeTask(btnSIN,3);
     }
 
     @FXML
@@ -142,6 +207,7 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().add(heading);
+        completeTask(btnBanking,4);
     }
 
     @FXML
@@ -154,6 +220,7 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().add(heading);
+        completeTask(btnAlbertaID,5);
     }
 
     @FXML
@@ -166,5 +233,39 @@ public class EssentialsController {
 
         vBoxEssentials.setSpacing(7);
         vBoxEssentials.getChildren().add(heading);
+        completeTask(btnEmergencyList,6);
+    }
+
+    @FXML
+    private void completeTask(Button button, int i){
+        if (!button.getStyle().equals("-fx-background-color: green")){
+            Button btnComplete = new Button("Complete Task");
+            btnComplete.setStyle("-fx-background-color: brown");
+            btnComplete.setFont(Font.font("Rockwell",16));
+            btnComplete.setTextFill(Paint.valueOf("white"));
+            btnComplete.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    btnComplete.setVisible(false);
+                    button.setStyle("-fx-background-color: green");
+                    button.setText("Completed");
+
+                    completeTask(button,0);
+                    logText[0] = logText[0].substring(0,11+i) + '1'+logText[0].substring(12+i);
+                    try {
+                        BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/java/calgaryhacks2025/calgary101/log"));
+                        for (String line : logText){
+                            writer.write(line);
+                            writer.write("\n");
+                        }
+                        writer.close();
+                    } catch (IOException ioe) {
+                        System.out.println("Couldn't write to file");
+                    }
+                }
+            });
+            vBoxEssentials.getChildren().add(btnComplete);
+        }
+
     }
 }
