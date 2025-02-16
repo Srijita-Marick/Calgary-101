@@ -8,7 +8,7 @@ public class HomePageApplication extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
+    //why
     @Override
     public void start(Stage primaryStage) {
 
