@@ -48,7 +48,7 @@
          </effect></AnchorPane>
       <AnchorPane layoutX="10.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="290.0" style="-fx-background-color: #351E10;">
          <children>
-            <Button alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="90.0" layoutY="50.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="🌄">
+            <Button alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="90.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleAdventuresButton" prefHeight="150.0" prefWidth="150.0" text="🌄">
                <font>
                   <Font size="62.0" />
                </font>
