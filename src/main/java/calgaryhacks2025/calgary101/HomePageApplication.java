@@ -16,7 +16,7 @@ public class HomePageApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HomePageApplication.class.getResource("homePage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         primaryStage.setTitle("Calgary 101");
         primaryStage.setScene(scene);
         primaryStage.show();
