@@ -14,6 +14,7 @@ public class WelcomeApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setTitle("Calgary 101");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

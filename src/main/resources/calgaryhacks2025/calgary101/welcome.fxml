@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #351E10; -fx-border-color: #997950; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #351E10; -fx-border-color: #997950; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.WelcomeController">
    <children>
       <Text fill="#997950" layoutX="82.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calgary!" textAlignment="CENTER" wrappingWidth="444.1572265625">
          <font>
@@ -33,7 +33,7 @@
             <Font size="40.0" />
          </font>
       </Text>
-      <Button layoutX="212.0" layoutY="445.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="178.0" text="Start Your Journey" textAlignment="CENTER">
+      <Button layoutX="212.0" layoutY="445.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleWelcomeButton" prefHeight="40.0" prefWidth="178.0" text="Start Your Journey" textAlignment="CENTER">
          <font>
             <Font name="Rockwell" size="18.0" />
          </font>

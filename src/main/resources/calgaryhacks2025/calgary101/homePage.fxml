@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
@@ -16,6 +17,9 @@
                <font>
                   <Font size="62.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Text layoutX="117.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Essentials" textAlignment="CENTER" wrappingWidth="94.13671875">
                <font>
@@ -29,6 +33,9 @@
                <font>
                   <Font size="62.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Text layoutX="80.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIDE QUESTS" textAlignment="CENTER" wrappingWidth="94.13671875">
                <font>
@@ -45,6 +52,9 @@
                <font>
                   <Font size="62.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Text layoutX="117.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADVENTURES" textAlignment="CENTER" wrappingWidth="94.13671875">
                <font>
@@ -61,6 +71,9 @@
                <font>
                   <Font size="62.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Text layoutX="80.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMERGENCY" textAlignment="CENTER" wrappingWidth="94.13671875">
                <font>
