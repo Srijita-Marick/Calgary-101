@@ -1,14 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="calgaryhacks2025.calgary101.EmergencyController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #CA9771; -fx-border-width: 10; -fx-background-color: #392A20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.EmergencyController">
+   <children>
+      <Text fill="WHITE" layoutX="32.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;&lt; Return">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="30.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleReturnButton" opacity="0.0" prefHeight="25.0" prefWidth="81.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="10.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="580.0" style="-fx-background-color: #FDDA70;">
+         <children>
+            <AnchorPane layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
+               <children>
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👮 The Sheriff's Roundup" wrappingWidth="290.4">
+                     <font>
+                        <Font name="Rockwell Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Emergency Line: Call 911" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Non-Emergencies: 403-266-1234" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Downtown Headquarters Address:" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="25.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="115 6 Ave SW" wrappingWidth="264.39999809265134">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you think you're in danger or witness a crime, contact the Calgary Police Services. " wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            <AnchorPane layoutX="290.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
+               <children>
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🏥 The Medic’s Outpost" wrappingWidth="290.4">
+                     <font>
+                        <Font name="Rockwell Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Emergency Line: Call 911" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Foothills Medical Centre: 1403 29 St NW" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Alberta Children's Hospital: 28 Oki Dr" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make sure you always know where to go to receive appropriate medical attention. " wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
+               <children>
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🔥 Fire Outpost" wrappingWidth="290.4">
+                     <font>
+                        <Font name="Rockwell Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Emergency Line: Call 911" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Always keep your home up to date with fire regulations, and contact the Calgary Fire Department if you see a fire" wrappingWidth="272.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="290.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0">
+               <children>
+                  <Text fill="#392a20" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="📞 The Lone Ranger’s Lifeline" wrappingWidth="290.4">
+                     <font>
+                        <Font name="Rockwell Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Distress Centre: Call 211" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Mental Health: 877-303-2642" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✪ Addiction: 866-303-2642" wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#392a20" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Always reach out if you need support." wrappingWidth="280.39999904632566">
+                     <font>
+                        <Font name="Rockwell" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <Text fill="#392a20" layoutX="10.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wild West SOS" textAlignment="CENTER" wrappingWidth="580.0">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Text>
+   </children>
 </AnchorPane>
