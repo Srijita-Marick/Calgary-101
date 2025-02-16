@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #CA9771; -fx-background-color: #392A20; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calgaryhacks2025.calgary101.AdventuresController">
    <children>
-      <VBox layoutX="200.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="390.0" style="-fx-background-color: #FDDA70;" />
+      <VBox fx:id="vboxAdventures" layoutX="200.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="390.0" style="-fx-background-color: #FDDA70;" />
       <Text fill="WHITE" layoutX="32.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;&lt; Return">
          <font>
             <Font name="Rockwell" size="16.0" />
@@ -17,5 +17,61 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
+      <Button fx:id="btnCalgaryTower" layoutX="40.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleCalgaryTower" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Calgary Tower" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPeaceBridge" layoutX="40.0" layoutY="150.0" mnemonicParsing="false" onAction="#handlePeaceBridge" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Peace Bridge" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCentralLibrary" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleCentralLibrary" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Central Library" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCalgaryZoo" layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleCalgaryZoo" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Calgary Zoo" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnChinookMall" layoutX="40.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleChinookMall" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Chinook Mall" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnMuseum" layoutX="40.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleMuseum" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Museum" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnStampede" layoutX="40.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleStampede" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #704214;" text="Stampede" textFill="#b9a89c">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
